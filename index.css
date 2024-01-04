@@ -1,0 +1,282 @@
+
+*::selection{
+  color: #fff;
+  background-color: #000;
+}
+*{
+  font-family: futura;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+nav .left{
+  line-height: 1vh;
+  font-size:medium;
+  font-weight: 800;
+}
+
+
+.right{
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  
+}
+.right h4{
+  font-family:futura-thin;
+  padding: 0rem 1rem;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.right h4:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.5;
+}
+
+.hero{
+  min-height: 100vh;
+}
+.change2{
+  display: none;
+}
+.bounding{
+  width: fit-content;
+  overflow: hidden;
+}
+.bounding .change{
+  transform: translateY(100%);
+}
+.boundings{
+  width: fit-content;
+  overflow: hidden;
+
+}
+.boundings .course{
+  transform: translateY(100%);
+}
+
+.heading h1{
+  font-size: 15vw;
+}
+.hero .change {
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: -3rem;
+}
+.hero .course{
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.video{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+.video-container{
+  position:relative;
+}
+
+.video-container .play{
+  padding: 3vw 2vw;
+  background-color: #000;
+  font-size:1.5vw;
+  color: #fff;
+  text-transform: uppercase;
+  position:absolute;
+  border-radius: 50%;
+}
+
+/* ---------------------------------------------------------------------------------- */
+hr{
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.page2{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.3vw;
+}
+
+  .page2 .elem {
+    height: 100%;
+    width: 31%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.page2 .elem img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.page2 .elem .dets {
+  height: 60px;
+  border-radius: 50px;
+  width: 70%;
+  position: absolute;
+  z-index: 9;
+  background-color: rgb(221, 218, 166);
+  overflow: scroll;
+  text-transform: uppercase;
+}
+
+.dets{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7vw;
+  padding: 0.5vw 2vw;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.page2 .elem .dets:hover{
+  height:300px;
+  align-items: baseline;  
+}
+
+.page3 {
+  min-height: 120vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.child {
+  height: 54vh;
+  width: 38vw;
+  /* background-color: red; */
+  /* border: 2px solid #000; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child img {
+  height: 100%;
+}
+#cursor {
+  height: 180px;
+  width: 180px;
+  background-color: rgba(224, 139, 189, 0.814);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%) scale(0);
+  
+}
+
+
+
+
+
+@media (max-width:600px){
+  *{
+    padding-left:-1vw;
+  }
+  .hero h1 {
+    font-size: 15.5vw;
+    letter-spacing: -3px;
+}
+.change2{
+  display: flex;
+  margin-bottom: -10vw;
+}
+
+.bounding{
+  width: fit-content;
+  visibility: hidden;
+}
+.boundings{
+  width: fit-content;
+  overflow: hidden;
+  margin-top: 12vw;
+
+}
+.video-container {
+  height: 25vh;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  width: fit-content;
+}
+
+.video-container .play {
+  padding: 9.5vw 7.2vw;
+  font-size: 4.5vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  scale: 1;
+  transform: translate(-50%, -50%);
+}
+.page2{
+  margin-top: -50vw;
+}
+.page2 .elem{
+  margin-bottom: 2vw;
+  width: 100%;
+}
+.page2 .elem h2{
+  font-size: medium;
+}
+.right .shop{
+  visibility: hidden;
+}
+.right .catering{
+  visibility: hidden;
+}
+.right .donate{
+  visibility: hidden;
+}
+.right h4{
+  padding-left: 2vw;
+}
+
+.page3 {
+  min-height: 120vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.child {
+  height: 54vh;
+  width: 88vw;
+  padding: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#child1{
+  margin-top: 500vw;
+  padding: 0 3vw;
+}
+.child img {
+  height: 100%;
+}
+
+
+
+}
